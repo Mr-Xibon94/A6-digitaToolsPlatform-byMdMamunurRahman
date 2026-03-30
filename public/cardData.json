@@ -19,7 +19,7 @@
         "name": "Pro Resume Kit",
         "description": "Advanced resume tools for professionals.",
         "price": 19,
-        "period": "monthly",
+        "period": "Mo",
         "tag": "popular",
         "tagType": "popular",
         "features": [
@@ -49,7 +49,7 @@
         "name": "Portfolio Builder",
         "description": "Create stunning personal portfolios.",
         "price": 15,
-        "period": "monthly",
+        "period": "Mo",
         "tag": "new",
         "tagType": "new",
         "features": [
@@ -64,7 +64,7 @@
         "name": "Freelancer Toolkit",
         "description": "Tools for freelancers to manage clients.",
         "price": 29,
-        "period": "monthly",
+        "period": "Mo",
         "tag": "popular",
         "tagType": "popular",
         "features": [
@@ -94,7 +94,7 @@
         "name": "LinkedIn Optimizer",
         "description": "Improve your LinkedIn profile visibility.",
         "price": 12,
-        "period": "monthly",
+        "period": "Mo",
         "tag": "popular",
         "tagType": "popular",
         "features": [
@@ -109,7 +109,7 @@
         "name": "Job Alert System",
         "description": "Get notified about new job openings.",
         "price": 5,
-        "period": "monthly",
+        "period": "Mo",
         "tag": "new",
         "tagType": "new",
         "features": [
