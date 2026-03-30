@@ -12,7 +12,7 @@
             "Basic customization",
             "Export to PDF"
         ],
-        "icon": "FileText"
+        "icon": "https://i.ibb.co.com/21d07ppR/id-1.png"
     },
     {
         "id": 2,
@@ -27,7 +27,7 @@
             "ATS optimization",
             "Export to PDF"
         ],
-        "icon": "Briefcase"
+        "icon": "https://i.ibb.co.com/5xMj3qLf/id-2.jpg"
     },
     {
         "id": 3,
@@ -42,7 +42,7 @@
             "Resume review",
             "Job tracking"
         ],
-        "icon": "TrendingUp"
+        "icon": "https://i.ibb.co.com/C5B4s6DX/id-3.webp"
     },
     {
         "id": 4,
@@ -57,7 +57,7 @@
             "Drag & drop editor",
             "Responsive design"
         ],
-        "icon": "Layout"
+        "icon": "https://i.ibb.co.com/V0wxzSy9/id-4.webp"
     },
     {
         "id": 5,
@@ -72,7 +72,7 @@
             "Client management",
             "Project tracking"
         ],
-        "icon": "Users"
+        "icon": "https://i.ibb.co.com/2YqjGhjr/id-5.webp"
     },
     {
         "id": 6,
@@ -87,7 +87,7 @@
             "Mock interviews",
             "Answer templates"
         ],
-        "icon": "MessageCircle"
+        "icon": "https://i.ibb.co.com/TqPtzRxB/id-6.png"
     },
     {
         "id": 7,
@@ -96,13 +96,13 @@
         "price": 12,
         "period": "Mo",
         "tag": "popular",
-        "tagType": "popular",
+        "tagType": "Popular",
         "features": [
             "Profile analysis",
             "Keyword optimization",
             "Headline generator"
         ],
-        "icon": "Linkedin"
+        "icon": "https://i.ibb.co.com/wZk4PsXT/id-7.jpg"
     },
     {
         "id": 8,
@@ -117,6 +117,6 @@
             "Custom filters",
             "Email notifications"
         ],
-        "icon": "Bell"
+        "icon": "https://i.ibb.co.com/b5XyYzRr/id-8.avif"
     }
 ]

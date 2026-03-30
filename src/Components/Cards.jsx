@@ -9,8 +9,17 @@ const Cards = ({ card }) => {
         // it is single card style 
         <div className='border shadow-2xl border-gray-200 rounded-2xl p-6 space-y-2.5'>
             <div className='flex justify-between'>
-                <img src={card.icon} alt="" />
-                <p>{card.tag}</p>
+                <div className='rounded-full p-2 border border-gray-200'>
+                    <img className='w-8'   src={card.icon} alt={card.name} />
+                </div>
+                
+                <div className=''>
+                    <p className={`${card.tag == 'new'?'text-green-400 bg-green-200':
+                    card.tag == 'popular'? 'text-purple-500 bg-purple-200':
+                    'text-red-400 bg-amber-100'} px-2 py-1 rounded-xl text-[12px]`}>{card.tag == 'new'?'New':
+                    card.tag == 'popular'? 'Popular':
+                    'Best Seller'}</p>
+                </div>
             </div>
 
             <h2 className='text-2xl font-semibold'>{card.name}</h2>
