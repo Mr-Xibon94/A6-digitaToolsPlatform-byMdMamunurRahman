@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "Starter Resume Builder",
+        "description": "Create simple and clean resumes quickly.",
+        "price": 0,
+        "period": "one-time",
+        "tag": "new",
+        "tagType": "new",
+        "features": [
+            "10+ templates",
+            "Basic customization",
+            "Export to PDF"
+        ],
+        "icon": "FileText"
+    },
+    {
+        "id": 2,
+        "name": "Pro Resume Kit",
+        "description": "Advanced resume tools for professionals.",
+        "price": 19,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "100+ templates",
+            "ATS optimization",
+            "Export to PDF"
+        ],
+        "icon": "Briefcase"
+    },
+    {
+        "id": 3,
+        "name": "Career Booster Pack",
+        "description": "Everything you need to land your dream job.",
+        "price": 49,
+        "period": "yearly",
+        "tag": "best seller",
+        "tagType": "best seller",
+        "features": [
+            "Cover letter builder",
+            "Resume review",
+            "Job tracking"
+        ],
+        "icon": "TrendingUp"
+    },
+    {
+        "id": 4,
+        "name": "Portfolio Builder",
+        "description": "Create stunning personal portfolios.",
+        "price": 15,
+        "period": "monthly",
+        "tag": "new",
+        "tagType": "new",
+        "features": [
+            "Custom domains",
+            "Drag & drop editor",
+            "Responsive design"
+        ],
+        "icon": "Layout"
+    },
+    {
+        "id": 5,
+        "name": "Freelancer Toolkit",
+        "description": "Tools for freelancers to manage clients.",
+        "price": 29,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Invoice generator",
+            "Client management",
+            "Project tracking"
+        ],
+        "icon": "Users"
+    },
+    {
+        "id": 6,
+        "name": "Interview Prep Guide",
+        "description": "Prepare for interviews with expert tips.",
+        "price": 9,
+        "period": "one-time",
+        "tag": "best seller",
+        "tagType": "best seller",
+        "features": [
+            "Common questions",
+            "Mock interviews",
+            "Answer templates"
+        ],
+        "icon": "MessageCircle"
+    },
+    {
+        "id": 7,
+        "name": "LinkedIn Optimizer",
+        "description": "Improve your LinkedIn profile visibility.",
+        "price": 12,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Profile analysis",
+            "Keyword optimization",
+            "Headline generator"
+        ],
+        "icon": "Linkedin"
+    },
+    {
+        "id": 8,
+        "name": "Job Alert System",
+        "description": "Get notified about new job openings.",
+        "price": 5,
+        "period": "monthly",
+        "tag": "new",
+        "tagType": "new",
+        "features": [
+            "Real-time alerts",
+            "Custom filters",
+            "Email notifications"
+        ],
+        "icon": "Bell"
+    }
+]
