@@ -1,10 +1,16 @@
 import React from 'react';
 import CartFeatures from './CartFeatures';
 
-const Cards = ({ card }) => {
+const Cards = ({ card, selectedCart, setselectedCart }) => {
+
+    const cardHandler = () => {
+         setselectedCart([...selectedCart, card]);
+       
+
+}
 
     const allFeatures = card.features;
-    console.log("I am in cards", card)
+    // console.log("I am in cards", card)
     return (
         // it is single card style 
         <div className='border shadow-2xl border-gray-200 rounded-2xl p-6 space-y-2.5'>
@@ -44,7 +50,7 @@ const Cards = ({ card }) => {
 
             {/* card button  */}
             <div className='btn rounded-3xl btn-w-full flex justify-center mt-5 bodyColor text-white'>
-                <button >Buy Now</button>
+                <button onClick={cardHandler} >Buy Now</button>
             </div>
 
         </div>

@@ -1,9 +1,9 @@
 import React from 'react';
 
-const SelectedCart = () => {
+const SelectedCart = ({choosenCard}) => {
     return (
         <div>
-            <h1>here is all selected cart</h1>
+            <h1>{choosenCard.name}</h1>
         </div>
     );
 };
