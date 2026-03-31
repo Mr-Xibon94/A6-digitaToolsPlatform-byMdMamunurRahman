@@ -51,18 +51,32 @@ const Allcards = ({ cardsDataPromise }) => {
                                 ))
                             }
                         </div> : togleBtn === 'cart' ?
-                            <div className='border border-red-500 h-50 mt-10'>
+                            <div className=' mt-10'>
                                 <div>
                                     <h1>No Card is added yet.</h1>
                                 </div>
 
                                 {
-                                    selectedCart.map(choosenCard => 
+                                    selectedCart.map(choosenCard =>
                                         <SelectedCart choosenCard={choosenCard} >
 
                                         </SelectedCart>
                                     )
+
                                 }
+
+                                <div className='m-3'>
+                                    <div className='flex justify-between p-2.5'>
+                                        <p className='text-gray-400'>Total:</p>
+                                        <p className='font-bold'>$100</p>
+                                    </div>
+                                    <div className='btn w-full rounded-4xl my-2.5 bodyColor text-white'>
+                                        <button>
+                                        Proceed To Checkout
+                                    </button>
+                                    </div>
+
+                                </div>
 
 
 
