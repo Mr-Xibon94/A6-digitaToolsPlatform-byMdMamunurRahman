@@ -4,12 +4,16 @@ const SelectedCart = ({ choosenCard ,selectedCart, setselectedCart,setprice, pri
 
      const removeHandler = (currentCard) => {
 
-        
+            const currentCardIndex = selectedCart.findIndex(index => index.id === currentCard.id)
 
-        const updatedCart = selectedCart.filter(carts => carts.id !== currentCard.id)
+            if(currentCardIndex !== -1){
+                const newCart = [...selectedCart];
+                newCart.splice(currentCardIndex, 1);
 
-        setprice(price-currentCard.price)
-        setselectedCart(updatedCart);
+                setselectedCart(newCart);
+                setprice(price-currentCard.price)
+            }
+
 
      }
     return (

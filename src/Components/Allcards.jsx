@@ -1,6 +1,7 @@
 import React, { use, useState } from 'react';
 import Cards from './Cards';
 import SelectedCart from './SelectedCart';
+import { ShoppingCart } from 'lucide-react';
 
 const Allcards = ({ cardsDataPromise }) => {
     const allCardsData = use(cardsDataPromise);
@@ -53,7 +54,7 @@ const Allcards = ({ cardsDataPromise }) => {
                 {/* it is the all card interface  */}
                 <div >
                     {togleBtn === "products" ?
-                        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-2.5 mt-10'>
+                        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
 
                             {
 
@@ -67,10 +68,16 @@ const Allcards = ({ cardsDataPromise }) => {
                             <div>
                                 {
                                     selectedCart.length == 0 ?
-                                        <div>
-                                            <h1>No Card is added yet.</h1>
+                                        <div className='border-none shadow-2xl rounded-2xl m-5'>
+                                            <h1 className='text-[20px] font-bold p-2.5'>Your Cart</h1>
+                                            <div className='text-center p-12'>
+                                                <div className='inline-block'>
+                                                    <ShoppingCart className='w-30 h-20 text-gray-300'></ShoppingCart>
+                                                    <p className='text-gray-500'>Your cart is empty</p>
+                                                </div>
+                                            </div>
                                         </div> :
-                                        <div>
+                                        <div className='m-5'>
                                             {
                                                 selectedCart.map(choosenCard =>
                                                     <SelectedCart choosenCard={choosenCard} setprice={setprice} price={price} selectedCart={selectedCart} setselectedCart={setselectedCart} >
