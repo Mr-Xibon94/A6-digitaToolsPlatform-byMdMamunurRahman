@@ -2,24 +2,27 @@ import React, { useEffect, useState } from 'react';
 import CartFeatures from './CartFeatures';
 import { Check } from 'lucide-react';
 
-const Cards = ({ card, selectedCart, setselectedCart,setprice, price }) => {
+const Cards = ({ card, selectedCart, setselectedCart,setprice, price,isActive,setisActive }) => {
 
     // this state will change the buttons color 
-    const [isActive, setisActive] = useState(false);
+    
 
-    useEffect( ()=> {
-        const activated = selectedCart.find(active => active.id === card.id)
+    // useEffect( ()=> {
+    //     const activated = selectedCart.find(active => active.id === card.id)
+    //     setisActive(false);
 
-        if(activated){
-            setisActive(true)
-        }
-    }, [selectedCart])
+    //     if(activated){
+            
+    //         setisActive(true)
+    //     }
+    // }, [selectedCart])
 
     const cardHandler = () => {
+        
         setprice(price+card.price)
          setselectedCart([...selectedCart, card]);
 
-        //  setisActive(id) 
+         setisActive(card.id) 
 
        
         return
@@ -66,8 +69,12 @@ const Cards = ({ card, selectedCart, setselectedCart,setprice, price }) => {
             </ul>
 
             {/* card button  */}
-            <div onClick={cardHandler} className={`btn rounded-3xl btn-w-full flex justify-center mt-5 ${isActive? 'bg-green-300':'bodyColor'}  text-white`}>
-                <button  >{isActive? <button className='flex'><Check className='text-white-400 w-4 mr-2.5'> </Check> Added to Cart!</button> :'Buy Now'}</button>
+            <div onClick={()=>{
+                setisActive(2); 
+                cardHandler();
+            }
+                } className={`btn rounded-3xl btn-w-full flex justify-center mt-5 ${isActive === card.id? 'bg-green-300':'bodyColor'}  text-white`}>
+                <button  >{isActive === card.id? <button className='flex'><Check className='text-white-400 w-4 mr-2.5'> </Check> Added to Cart!</button> :'Buy Now'}</button>
             </div>
 
         </div>

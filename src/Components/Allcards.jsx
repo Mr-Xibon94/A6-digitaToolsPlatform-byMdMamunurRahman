@@ -2,9 +2,12 @@ import React, { use, useState } from 'react';
 import Cards from './Cards';
 import SelectedCart from './SelectedCart';
 import { ShoppingCart } from 'lucide-react';
+import Navbar from './NavBar/Navbar';
 
 const Allcards = ({ cardsDataPromise }) => {
     const allCardsData = use(cardsDataPromise);
+
+
 
     // it is state for toggling buttons 
     const [togleBtn, settogleBtn] = useState('products');
@@ -14,6 +17,9 @@ const Allcards = ({ cardsDataPromise }) => {
 
     // it is the state for count total price 
     const [price, setprice] = useState(0);
+
+    // this state will handle buy buttons color 
+    const [isActive, setisActive] = useState(null);
 
     // it is the handler to empty cart section 
     const proceedHanlder = () => {
@@ -33,6 +39,11 @@ const Allcards = ({ cardsDataPromise }) => {
     return (
         <div>
 
+            {/* it is my navbar  */}
+            <Navbar selectedCart={selectedCart}>
+
+            </Navbar>
+
 
             {/* it is my full card section  */}
             <div className=' w-11/12 mx-auto'>
@@ -43,11 +54,13 @@ const Allcards = ({ cardsDataPromise }) => {
                     <div className='flex justify-center '>
 
                         {/* it is the two buttons which will togle  */}
-                        <button onClick={() => (
+                        <button className='btn rounded-2xl'>
+                            <button onClick={() => (
                             settogleBtn('products')
-                        )} className={`btn rounded-3xl ${togleBtn == 'products' ? 'bodyColor text-white' : ''}`}>Products</button>
+                        )} className={`btn w-full rounded-3xl ${togleBtn == 'products' ? 'bodyColor text-white' : ''}`}>Products</button>
                         {/* BUTTON CART  */}
-                        <button onClick={cartHandler} className={`btn rounded-3xl ${togleBtn == 'cart' ? 'bodyColor text-white' : ''}`}>Cart({selectedCart.length})</button>
+                        <button onClick={cartHandler} className={`btn w-full rounded-3xl ${togleBtn == 'cart' ? 'bodyColor text-white' : ''}`}>Cart({selectedCart.length})</button>
+                        </button>
                     </div>
                 </div>
 
@@ -59,7 +72,7 @@ const Allcards = ({ cardsDataPromise }) => {
                             {
 
                                 allCardsData.map(card => (
-                                    <Cards key={card.id} card={card} selectedCart={selectedCart} setprice={setprice} price={price} setselectedCart={setselectedCart}>
+                                    <Cards key={card.id} card={card} selectedCart={selectedCart} setprice={setprice} price={price} setselectedCart={setselectedCart} isActive={isActive} setisActive={setisActive}>
 
                                     </Cards>
                                 ))
