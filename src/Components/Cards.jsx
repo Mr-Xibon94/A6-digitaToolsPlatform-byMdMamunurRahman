@@ -2,31 +2,27 @@ import React, { useEffect, useState } from 'react';
 import CartFeatures from './CartFeatures';
 import { Check } from 'lucide-react';
 
-const Cards = ({ card, selectedCart, setselectedCart,setprice, price,isActive,setisActive }) => {
+const Cards = ({ card, selectedCart, setselectedCart, setprice, price, isActive, setisActive }) => {
 
     // this state will change the buttons color 
-    
+    useEffect(() => {
 
-    // useEffect( ()=> {
-    //     const activated = selectedCart.find(active => active.id === card.id)
-    //     setisActive(false);
+        if (selectedCart.length === 0) {
 
-    //     if(activated){
-            
-    //         setisActive(true)
-    //     }
-    // }, [selectedCart])
+            setisActive(null)
+        }
+    }, [selectedCart])
 
     const cardHandler = () => {
-        
-        setprice(price+card.price)
-         setselectedCart([...selectedCart, card]);
 
-         setisActive(card.id) 
+        setprice(price + card.price)
+        setselectedCart([...selectedCart, card]);
 
-       
+        setisActive(card.id)
+
+
         return
-}
+    }
 
     const allFeatures = card.features;
     // console.log("I am in cards", card)
@@ -36,15 +32,15 @@ const Cards = ({ card, selectedCart, setselectedCart,setprice, price,isActive,se
         hover:scale-105 hover:shadow-xl hover: -translate-y-2 '>
             <div className='flex justify-between'>
                 <div className='rounded-full p-2 border border-gray-200'>
-                    <img className='w-8'   src={card.icon} alt={card.name} />
+                    <img className='w-8' src={card.icon} alt={card.name} />
                 </div>
-                
+
                 <div className=''>
-                    <p className={`${card.tag == 'new'?'text-green-400 bg-green-200':
-                    card.tag == 'popular'? 'text-purple-500 bg-purple-200':
-                    'text-red-400 bg-amber-100'} px-2 py-1 rounded-xl text-[12px]`}>{card.tag == 'new'?'New':
-                    card.tag == 'popular'? 'Popular':
-                    'Best Seller'}</p>
+                    <p className={`${card.tag == 'new' ? 'text-green-400 bg-green-200' :
+                        card.tag == 'popular' ? 'text-purple-500 bg-purple-200' :
+                            'text-red-400 bg-amber-100'} px-2 py-1 rounded-xl text-[12px]`}>{card.tag == 'new' ? 'New' :
+                                card.tag == 'popular' ? 'Popular' :
+                                    'Best Seller'}</p>
                 </div>
             </div>
 
@@ -69,12 +65,12 @@ const Cards = ({ card, selectedCart, setselectedCart,setprice, price,isActive,se
             </ul>
 
             {/* card button  */}
-            <div onClick={()=>{
-                setisActive(2); 
+            <div onClick={() => {
+                setisActive(2);
                 cardHandler();
             }
-                } className={`btn rounded-3xl btn-w-full flex justify-center mt-5 ${isActive === card.id? 'bg-green-300':'bodyColor'}  text-white`}>
-                <button  >{isActive === card.id? <button className='flex'><Check className='text-white-400 w-4 mr-2.5'> </Check> Added to Cart!</button> :'Buy Now'}</button>
+            } className={`btn rounded-3xl btn-w-full flex justify-center mt-5 ${isActive === card.id && selectedCart.length !== 0 ? 'bg-green-300' : 'bodyColor'}  text-white`}>
+                <button  >{isActive === card.id && selectedCart.length !== 0 ? <button className='flex'><Check className='text-white-400 w-4 mr-2.5'> </Check> Added to Cart!</button> : 'Buy Now'}</button>
             </div>
 
         </div>
