@@ -1,6 +1,17 @@
 import React from 'react';
 
-const SelectedCart = ({ choosenCard }) => {
+const SelectedCart = ({ choosenCard ,selectedCart, setselectedCart,setprice, price }) => {
+
+     const removeHandler = (currentCard) => {
+
+        
+
+        const updatedCart = selectedCart.filter(carts => carts.id !== currentCard.id)
+
+        setprice(price-currentCard.price)
+        setselectedCart(updatedCart);
+
+     }
     return (
         <div>
             <div className='flex justify-between  m-2.5 p-2.5 bg-gray-50 rounded-xl'>
@@ -16,7 +27,8 @@ const SelectedCart = ({ choosenCard }) => {
                 </div>
 
                 <div className='flex items-center'>
-                    <p className='text-red-600'>Remove</p>
+                    <p onClick={()=>
+                        removeHandler(choosenCard)} className='text-red-600 cursor-pointer'>Remove</p>
                 </div>
 
 

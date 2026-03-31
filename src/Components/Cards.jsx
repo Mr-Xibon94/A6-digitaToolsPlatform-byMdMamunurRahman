@@ -1,12 +1,13 @@
 import React from 'react';
 import CartFeatures from './CartFeatures';
 
-const Cards = ({ card, selectedCart, setselectedCart }) => {
+const Cards = ({ card, selectedCart, setselectedCart,setprice, price }) => {
 
     const cardHandler = () => {
+        setprice(price+card.price)
          setselectedCart([...selectedCart, card]);
        
-
+        return
 }
 
     const allFeatures = card.features;
@@ -49,8 +50,8 @@ const Cards = ({ card, selectedCart, setselectedCart }) => {
             </ul>
 
             {/* card button  */}
-            <div className='btn rounded-3xl btn-w-full flex justify-center mt-5 bodyColor text-white'>
-                <button onClick={cardHandler} >Buy Now</button>
+            <div onClick={cardHandler} className='btn rounded-3xl btn-w-full flex justify-center mt-5 bodyColor text-white'>
+                <button  >Buy Now</button>
             </div>
 
         </div>
