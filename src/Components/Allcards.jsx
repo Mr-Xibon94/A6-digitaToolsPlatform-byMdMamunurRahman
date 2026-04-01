@@ -5,6 +5,7 @@ import { ShoppingCart } from 'lucide-react';
 import Navbar from './NavBar/Navbar';
 import Banner from './Banner/Banner';
 import BodySectionOne from './BodySection/BodySectionOne';
+import BodySectionThree from './BodySection/BodySectionThree';
 
 const Allcards = ({ cardsDataPromise }) => {
     // here the api data is used 
@@ -55,12 +56,12 @@ const Allcards = ({ cardsDataPromise }) => {
             {/* it is my body section part 1  */}
 
             <BodySectionOne>
-                
+
             </BodySectionOne>
 
 
-            {/* it is my full card section  */}
-            <div className=' w-11/12 mx-auto'>
+            {/* it is my full card section and body section-2 */}
+            <div className=' w-11/12 mx-auto mb-15'>
                 {/* it is title head div of the card section  */}
                 <div className='text-center'>
                     <h1 className='text-4xl font-bold '>Premium Digital Tools</h1>
@@ -146,6 +147,11 @@ const Allcards = ({ cardsDataPromise }) => {
 
 
             </div>
+
+            {/* it is body section part 3  */}
+            <BodySectionThree>
+                
+            </BodySectionThree>
 
         </div>
     );
