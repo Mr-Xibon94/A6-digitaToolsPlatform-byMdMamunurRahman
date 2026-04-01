@@ -13,9 +13,9 @@ const BodySectionThree = () => {
                     <p className='text-gray-400'>Start using premium digital tools in minutes, not hours.</p>
                 </div>
                 {/* here all of my get started card  */}
-                <div className='flex flex-col justify-center md:flex-row md:justify-between gap-2.5  bg-gray-50'>
+                <div className='flex flex-col md:flex-row gap-2.5  bg-gray-50'>
                     {/* card - 01 */}
-                    <div className=' rounded-2xl p-5 bg-white border-none shadow-2xl space-y-2.5'>
+                    <div className='flex-1 rounded-2xl p-5 bg-white border-none shadow-2xl space-y-2.5'>
                         <div className='flex justify-end'>
                             <div className='flex w-fit rounded-full p-1 bodyColor text-white '>
                             <p className=' justify-end'>01</p>
@@ -32,7 +32,7 @@ const BodySectionThree = () => {
                         </div>
                     </div>
                     {/* card - 02 */}
-                    <div className=' rounded-2xl p-5 bg-white border-none shadow-2xl space-y-2.5'>
+                    <div className='flex-1 rounded-2xl p-5 bg-white border-none shadow-2xl space-y-2.5'>
                         <div className='flex justify-end'>
                             <div className='flex w-fit rounded-full p-1 bodyColor text-white '>
                             <p className=' justify-end'>02</p>
@@ -49,7 +49,7 @@ const BodySectionThree = () => {
                         </div>
                     </div>
                         {/* card -03 */}
-                    <div className=' rounded-2xl p-5 bg-white border-none shadow-2xl space-y-2.5'>
+                    <div className='flex-1 rounded-2xl p-5 bg-white border-none shadow-2xl space-y-2.5'>
                         <div className='flex justify-end'>
                             <div className='flex w-fit rounded-full p-1 bodyColor text-white '>
                             <p className=' justify-end'>03</p>
