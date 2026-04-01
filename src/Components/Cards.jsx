@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import CartFeatures from './CartFeatures';
 import { Check } from 'lucide-react';
+import { toast } from 'react-toastify';
 
 const Cards = ({ card, selectedCart, setselectedCart, setprice, price, isActive, setisActive }) => {
 
@@ -14,6 +15,10 @@ const Cards = ({ card, selectedCart, setselectedCart, setprice, price, isActive,
     }, [selectedCart])
 
     const cardHandler = () => {
+
+        toast.success(`${card.name} added to Cart Successfully`)
+
+        
 
         setprice(price + card.price)
         setselectedCart([...selectedCart, card]);

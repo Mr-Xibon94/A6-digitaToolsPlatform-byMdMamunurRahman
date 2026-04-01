@@ -1,4 +1,5 @@
 
+import { ToastContainer } from 'react-toastify'
 import './App.css'
 import Allcards from './Components/Allcards'
 import { Suspense } from 'react'
@@ -16,13 +17,16 @@ function App() {
 
   return (
     <>
-      <Suspense fallback ={<span className="loading loading-bars loading-xl"></span>} >
+      <Suspense fallback ={<div className='flex min-h-screen items-center justify-center'>
+          <span className="loading loading-bars loading-xl"></span>
+        </div>} >
         <Allcards cardsDataPromise={cardsDataPromise}>
 
         </Allcards>
 
       </Suspense>
 
+           <ToastContainer />
     </>
   )
 }

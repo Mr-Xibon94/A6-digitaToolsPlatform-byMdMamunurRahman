@@ -1,8 +1,11 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const SelectedCart = ({ choosenCard ,selectedCart, setselectedCart,setprice, price }) => {
 
      const removeHandler = (currentCard) => {
+        
+         toast.warning(`${choosenCard.name} is removed form the Cart`)
 
             const currentCardIndex = selectedCart.findIndex(index => index.id === currentCard.id)
 

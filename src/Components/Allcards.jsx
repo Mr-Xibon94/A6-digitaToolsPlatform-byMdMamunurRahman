@@ -8,6 +8,7 @@ import BodySectionOne from './BodySection/BodySectionOne';
 import BodySectionThree from './BodySection/BodySectionThree';
 import BodySectionFour from './BodySection/BodySectionFour';
 import FooterSection from './Footer/FooterSection';
+import { toast } from 'react-toastify';
 
 const Allcards = ({ cardsDataPromise }) => {
     // here the api data is used 
@@ -29,6 +30,7 @@ const Allcards = ({ cardsDataPromise }) => {
 
     // it is the handler to empty cart section 
     const proceedHanlder = () => {
+        toast.warning("Cart is Empty")
         setselectedCart([]);
         setprice(0);
     }
@@ -163,7 +165,7 @@ const Allcards = ({ cardsDataPromise }) => {
 
             {/* it is my Footer Section  */}
             <FooterSection>
-                
+
             </FooterSection>
 
         </div>
