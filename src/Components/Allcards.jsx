@@ -75,10 +75,10 @@ const Allcards = ({ cardsDataPromise }) => {
                         {/* it is the two buttons which will togle  */}
                         <button className='btn rounded-2xl'>
                             <button onClick={() => (
-                            settogleBtn('products')
-                        )} className={`btn w-full rounded-3xl ${togleBtn == 'products' ? 'bodyColor text-white' : ''}`}>Products</button>
-                        {/* BUTTON CART  */}
-                        <button onClick={cartHandler} className={`btn w-full rounded-3xl ${togleBtn == 'cart' ? 'bodyColor text-white' : ''}`}>Cart({selectedCart.length})</button>
+                                settogleBtn('products')
+                            )} className={`btn w-full rounded-3xl ${togleBtn == 'products' ? 'bodyColor text-white' : ''}`}>Products</button>
+                            {/* BUTTON CART  */}
+                            <button onClick={cartHandler} className={`btn w-full rounded-3xl ${togleBtn == 'cart' ? 'bodyColor text-white' : ''}`}>Cart({selectedCart.length})</button>
                         </button>
                     </div>
                 </div>
@@ -154,7 +154,7 @@ const Allcards = ({ cardsDataPromise }) => {
 
             {/* it is body section part 3  */}
             <BodySectionThree>
-                
+
             </BodySectionThree>
 
 
