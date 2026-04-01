@@ -12,10 +12,10 @@ DigiTools is a modern web-based platform that provides a collection of powerful 
 
 ## Technologies Used
 
-* ⚛️ React.js
-* 🎨 Tailwind CSS
-* 🌼 DaisyUI
-* 🧩 Lucide React Icons
+* React.js
+* Tailwind CSS
+* DaisyUI
+* Lucide React Icons
 
 ---
 
