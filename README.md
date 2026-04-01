@@ -15,7 +15,10 @@ DigiTools is a modern web-based platform that provides a collection of powerful 
 * React.js
 * Tailwind CSS
 * DaisyUI
+* JavaScript (ES6+)
+* React-Toastify (NPM Package)
 * Lucide React Icons
+* JSON (for product data)
 
 ---
 
