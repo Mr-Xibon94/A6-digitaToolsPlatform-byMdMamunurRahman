@@ -7,6 +7,7 @@ import Banner from './Banner/Banner';
 import BodySectionOne from './BodySection/BodySectionOne';
 import BodySectionThree from './BodySection/BodySectionThree';
 import BodySectionFour from './BodySection/BodySectionFour';
+import FooterSection from './Footer/FooterSection';
 
 const Allcards = ({ cardsDataPromise }) => {
     // here the api data is used 
@@ -157,8 +158,13 @@ const Allcards = ({ cardsDataPromise }) => {
 
             {/* it is my body section part 4  */}
             <BodySectionFour>
-                
+
             </BodySectionFour>
+
+            {/* it is my Footer Section  */}
+            <FooterSection>
+                
+            </FooterSection>
 
         </div>
     );

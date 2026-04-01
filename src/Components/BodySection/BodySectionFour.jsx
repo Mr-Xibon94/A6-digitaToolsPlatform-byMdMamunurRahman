@@ -71,7 +71,7 @@ const BodySectionFour = () => {
 
                         {/* card button  */}
                         <div className={`btn rounded-3xl btn-w-full flex justify-center mt-auto  border`}>
-                            <button className='bg-gradient-to-r from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent p-1' >Get Started Free</button>
+                            <button className='bg-gradient-to-r from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent p-1' >Start Pro Trial</button>
                         </div>
 
                     </div>
@@ -80,20 +80,22 @@ const BodySectionFour = () => {
                     <div className='flex flex-col border shadow-2xl border-gray-200 rounded-2xl p-6  gap-2.5 flex-1 '>
 
 
-                        <h2 className='text-2xl font-semibold'>Starter</h2>
+                        <h2 className='text-2xl font-semibold'>Enterprise</h2>
 
-                        <p className='text-gray-500'>Perfect for getting started</p>
+                        <p className='text-gray-500'>For teams and businesses</p>
 
                         <div className='flex '>
-                            <h1 className='text-xl font-semibold'>$0</h1>
+                            <h1 className='text-xl font-semibold'>$99</h1>
                             <h1 ><sub className='text-gray-400 text-[14px]'>/Month</sub> </h1>
                         </div>
                         {/* it is the features section of my card  */}
                         <ul>
-                            <li className='flex text-gray-500'><Check className='text-green-400 w-4 mr-2.5'></Check><p>Access to 10 free tools</p></li>
-                            <li className='flex text-gray-500'><Check className='text-green-400 w-4 mr-2.5'></Check><p>Basic templates</p></li>
-                            <li className='flex text-gray-500'><Check className='text-green-400 w-4 mr-2.5'></Check><p>Community support</p></li>
-                            <li className='flex text-gray-500'><Check className='text-green-400 w-4 mr-2.5'></Check><p>1 project per month</p></li>
+                            <li className='flex text-gray-500'><Check className='text-green-400 w-4 mr-2.5'></Check><p>Everything in Pro</p></li>
+                            <li className='flex text-gray-500'><Check className='text-green-400 w-4 mr-2.5'></Check><p>Team collaboration</p></li>
+                            <li className='flex text-gray-500'><Check className='text-green-400 w-4 mr-2.5'></Check><p>Custom integrations</p></li>
+                            <li className='flex text-gray-500'><Check className='text-green-400 w-4 mr-2.5'></Check><p>Dedicated support</p></li>
+                            <li className='flex text-gray-500'><Check className='text-green-400 w-4 mr-2.5'></Check><p>SLA guarantee</p></li>
+                            <li className='flex text-gray-500'><Check className='text-green-400 w-4 mr-2.5'></Check><p>Custom branding</p></li>
 
                         </ul>
 
