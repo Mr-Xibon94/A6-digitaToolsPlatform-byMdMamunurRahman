@@ -5,3 +5,8 @@
 .bodyColor {
     background: linear-gradient(to right, #4f39f6, #9514fa);
 }
+
+.btnBgColor:hover {
+    background: linear-gradient(to right, #4f39f6, #9514fa);
+    color: white
+}
