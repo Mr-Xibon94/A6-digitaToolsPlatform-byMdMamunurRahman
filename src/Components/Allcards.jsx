@@ -4,6 +4,7 @@ import SelectedCart from './SelectedCart';
 import { ShoppingCart } from 'lucide-react';
 import Navbar from './NavBar/Navbar';
 import Banner from './Banner/Banner';
+import BodySectionOne from './BodySection/BodySectionOne';
 
 const Allcards = ({ cardsDataPromise }) => {
     // here the api data is used 
@@ -48,8 +49,14 @@ const Allcards = ({ cardsDataPromise }) => {
 
             {/* it is my banner section */}
             <Banner>
-                
+
             </Banner>
+
+            {/* it is my body section part 1  */}
+
+            <BodySectionOne>
+                
+            </BodySectionOne>
 
 
             {/* it is my full card section  */}
